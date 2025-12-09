@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="loginBtn" class="btn btn-login">LOG IN</button>
+            <h1>📝 My Notes</h1>
+            <p class="subtitle">Keep your thoughts organized</p>
+        </header>
+
+        <div class="note-input-section">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="noteTitle" 
+                    placeholder="Note title..."
+                    class="note-title-input"
+                >
+                <textarea 
+                    id="noteContent" 
+                    placeholder="Write your note here..."
+                    class="note-content-input"
+                    rows="4"
+                ></textarea>
+                <div class="button-group">
+                    <button id="saveNote" class="btn btn-primary">Save Note</button>
+                    <button id="clearNote" class="btn btn-secondary">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="notes-section">
+            <div class="notes-header">
+                <h2>Your Notes</h2>
+                <span id="noteCount" class="note-count">0 notes</span>
+            </div>
+            <div id="notesContainer" class="notes-container">
+                <!-- Notes will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
